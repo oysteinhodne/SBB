@@ -1,0 +1,12 @@
+<ion-view view-title="Konserter">
+  <ion-content class="scroll-bg">
+    <ion-list>
+      <a ng-repeat="concert in concerts" class="item item-avatar item-icon-right" href="#/app/concerts/{{$index}}">
+      	<img class="" ng-src="{{concert.imgSrc}}" />
+		<h2>{{concert.title}}</h2>
+		<p>{{concert.date}}</p>
+		<i class="icon ion-chevron-right icon-accessory"></i>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

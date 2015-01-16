@@ -1,0 +1,16 @@
+<ion-view view-title="Nyheter">
+  <ion-content class="scroll-bg">
+    <div class="list card news-article-thumb" ng-repeat="article in news" >
+    <a ng-href="{{article.url}}" target="_blank">
+		<img class="full-image" ng-src="{{article.imgSrc}}"/>
+		<div class="news-article-thumb-text">
+			<div class="text-container">
+				<p ng-if="article.subheader" class="thumb-subheader">{{article.subheader}}</p>
+				<h3 class="thumb-header">{{article.header}}</h3>
+				<p class="thumb-date">{{article.date}}</p>
+			</div>
+		</div>
+	</a>
+    </div>
+  </ion-content>
+</ion-view>

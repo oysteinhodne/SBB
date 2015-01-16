@@ -1,0 +1,90 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+$dark:                            #111 !default;
+$big-bg:      					  '../img/dark-bg.jpg';
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+h1, h2, h3, h4 , div, p, a, span, {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#bgOverlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background-color: rgba(0,0,0,.3);
+}
+
+.scroll-bg {
+	background: url($big-bg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.content-container{
+	background-color: rgba(white, 0.6);
+	margin: 5px 5px;
+}
+
+.card {
+	border-radius:0;
+}
+
+.bg-dark {
+	background-color: black;
+	color:white;
+}
+
+.news-article-thumb{
+	max-height:240px;
+}
+
+.news-article-thumb-text{
+	background: rgba(250, 250, 250, 0.9);
+	bottom:0%;
+	position:absolute;
+	z-index: 1000;
+	width:100%;
+}
+
+.news-article-thumb-text > .text-container{
+	padding: 10px;
+}
+
+.news-article-thumb-text > .text-container > .thumb-header{
+	margin:0;
+}
+
+.news-article-thumb-text > .text-container > .thumb-subheader{
+	margin:0;
+	color: #666;
+}
+
+.news-article-thumb-text > .text-container > .thumb-date {
+	margin:0;
+	color: #666;
+}

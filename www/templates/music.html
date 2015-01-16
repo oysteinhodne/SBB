@@ -1,0 +1,21 @@
+<ion-view view-title="Musikk">
+<div class="tabs-striped tabs-top tabs-background-dark tabs-color-light">
+    <div class="tabs">
+      <a class="tab-item active" href="#/app/music/video">
+        <i class="icon ion-videocamera"></i>
+        Videor
+      </a>
+      <a class="tab-item" href="#/app/music/audio">
+        <i class="icon ion-mic-a"></i>
+        Lydklipp
+      </a>
+    </div>
+  </div>
+  <ion-content class="scroll-bg">
+    <ion-list>
+      <ion-item ng-repeat="track in music" href="#/app/music/{{track.id}}">
+        {{track.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
